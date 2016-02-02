@@ -44,6 +44,7 @@ public class Create_Node_Background_Sample {
 			
 			public void processResult(CuratorFramework client, CuratorEvent event)
 					throws Exception {
+				
 				System.out.println("event[code"+event.getResultCode()+", type:"+event.getType()+"]");
 				System.out.println("Thread of processresult"+Thread.currentThread().getName());
 				countDownLatch.countDown();
