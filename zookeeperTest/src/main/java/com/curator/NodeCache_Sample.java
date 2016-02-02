@@ -24,7 +24,7 @@ import org.apache.zookeeper.CreateMode;
 public class NodeCache_Sample {
 	static String Path = "/chaochao/123456";
 	static CuratorFramework client = CuratorFrameworkFactory.builder()
-			.connectString("100.66.162.37:2181").sessionTimeoutMs(5000)
+			.connectString("100.66.162.36:2181").sessionTimeoutMs(5000)
 			.retryPolicy(new ExponentialBackoffRetry(1000, 3)).build();
 	
 	public static void main(String[] args) throws Exception {
